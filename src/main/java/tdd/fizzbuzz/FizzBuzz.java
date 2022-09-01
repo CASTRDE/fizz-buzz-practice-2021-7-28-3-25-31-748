@@ -3,15 +3,21 @@ package tdd.fizzbuzz;
 public class FizzBuzz {
     public String countOff(int i) {
         String FIZZ = "Fizz", BUZZ = "Buzz", WHIZZ = "Whizz";
-//        if( i%3 == 0 && i%5 == 0)
-//            return FIZZ+BUZZ;
-        if( i%3 == 0)
-            return FIZZ;
-        else if( i%5 == 0)
-            return BUZZ;
-        else if( i%7 == 0)
-            return WHIZZ;
-        else
-            return String.valueOf(i);
+        String result = "";
+
+        if( i%3 == 0) {
+            result+=FIZZ;
+        }
+        if( i%5 == 0){
+            result+=BUZZ;
+        }
+        if( i%7 == 0){
+            result+=WHIZZ;
+        }
+        if(result.length() == 0){
+            result=String.valueOf(i);
+        }
+
+        return result;
     }
 }
