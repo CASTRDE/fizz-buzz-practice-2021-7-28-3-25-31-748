@@ -43,9 +43,24 @@ public class FizzBuzzTest {
         //then
         assertEquals(expected, actual);
     }
+
+    @Test
+    void should_return_whizz_when_countOff_multiple_of_7() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String expected = "Whizz";
+
+        //when
+        String actual = fizzBuzz.countOff(7);
+
+        //then
+        assertEquals(expected, actual);
+    }
+
 //Notes
     //fizz = 3
     //buzz = 5
     //whizz = 7
 
+//1 fail test, 2 implement
 }
