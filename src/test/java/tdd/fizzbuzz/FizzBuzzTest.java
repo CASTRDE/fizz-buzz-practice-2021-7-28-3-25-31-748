@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FizzBuzzTest {
     @Test
-    void should_return_number_when_countOf_given_1() {
+    void should_return_number_when_countOff_given_1() {
         //given
         FizzBuzz fizzBuzz = new FizzBuzz();
         String expected = "1";
@@ -19,7 +19,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    void should_return_fizz_when_countOf_multiple_of_3() {
+    void should_return_fizz_when_countOff_multiple_of_3() {
         //given
         FizzBuzz fizzBuzz = new FizzBuzz();
         String expected = "fizz";
