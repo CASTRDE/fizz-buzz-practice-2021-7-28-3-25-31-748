@@ -22,7 +22,7 @@ public class FizzBuzzTest {
     void should_return_fizz_when_countOff_multiple_of_3() {
         //given
         FizzBuzz fizzBuzz = new FizzBuzz();
-        String expected = "fizz";
+        String expected = "Fizz";
 
         //when
         String actual = fizzBuzz.countOff(3);
@@ -31,12 +31,21 @@ public class FizzBuzzTest {
         assertEquals(expected, actual);
     }
 
-//    @Test
-//    void should_return_number_when_countOf_given_1() {
-//        //given
-//
-//        //when
-//
-//        //then
-//    }
+    @Test
+    void should_return_buzz_when_countOff_multiple_of_5() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String expected = "Buzz";
+
+        //when
+        String actual = fizzBuzz.countOff(5);
+
+        //then
+        assertEquals(expected, actual);
+    }
+//Notes
+    //fizz = 3
+    //buzz = 5
+    //whizz = 7
+
 }
