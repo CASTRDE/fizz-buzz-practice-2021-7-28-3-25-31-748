@@ -3,6 +3,8 @@ package tdd.fizzbuzz;
 public class FizzBuzz {
     public String countOff(int i) {
         String FIZZ = "Fizz", BUZZ = "Buzz", WHIZZ = "Whizz";
+//        if( i%3 == 0 && i%5 == 0)
+//            return FIZZ+BUZZ;
         if( i%3 == 0)
             return FIZZ;
         else if( i%5 == 0)
